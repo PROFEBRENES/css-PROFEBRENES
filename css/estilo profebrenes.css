@@ -23,7 +23,17 @@ h2, h3 {
   font-size: 1.2em;
   font-family: 'Courier New', monospace;
 }
-
+ .formula-box {
+      background-color: #ffffff;
+      padding: 15px 25px;
+      margin: 25px auto 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: fit-content;
+      text-align: center;
+      font-size: 1.2em;
+      max-width: 90vw;
+    }
 .seccion {
   margin-top: 2em;
 }
@@ -66,3 +76,4 @@ td {
   margin-top: 1em;
   box-shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
+
