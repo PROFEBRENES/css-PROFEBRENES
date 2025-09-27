@@ -48,7 +48,7 @@ body {
     .seccion strong {
       color: var(--accent-2);
     }
-    .destacado {
+    .destacado1 {
       background-color: var(--accent-3);
       padding: 15px;
       border-radius: 8px;
@@ -170,6 +170,7 @@ hr {
 @media (max-width: 640px) {
   .summary { grid-template-columns: 1fr; }
 }
+
 
 
 
