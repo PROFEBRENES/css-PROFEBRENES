@@ -31,6 +31,7 @@ body {
       padding: 20px;
       max-width: 850px;
       margin: auto;
+      margin-top: 1em;
     }
     .reseña h1 {
       text-align: center;
@@ -84,7 +85,6 @@ margin: 25px auto 40px auto;
   padding: 1em;
   text-align: center;
   font-size: 1.2em;
-  font-family: 'Courier New', monospace;
 border-radius: 12px;
  width: fit-content;
 }
@@ -170,6 +170,7 @@ hr {
 @media (max-width: 640px) {
   .summary { grid-template-columns: 1fr; }
 }
+
 
 
 
