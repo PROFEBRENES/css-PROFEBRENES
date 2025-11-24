@@ -1,6 +1,5 @@
 Información auxiliar para utilizar el mismo estilo en la página PROFEBRENES de google site.
 
-
 Cuando pegues código de estructura en Google site no olvides pegar estas lineas de código (sirve para usar los estilos y para cargar el renderizado de fórmulas matemáticas):
 Clica en la pestaña superior que pone "Code" para poder copiar las tres siguientes lineas. Si no lo haces no podrás copiar bien el código.
 Estas tres lineas siguientes hay que introducirlas dentro de head.
