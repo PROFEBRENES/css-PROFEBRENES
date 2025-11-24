@@ -12,6 +12,10 @@
   --radius: 12px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg);
@@ -21,44 +25,58 @@ body {
   line-height: 1.6;
 }
 
+.reseña {
+  background: var(--card);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 850px;
+  margin: auto;
+  margin-top: 1em;
+}
 
+.reseña h1 {
+  text-align: center;
+  color: var(--accent);
+}
 
+.imagen, 
+.imagen-levitt {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
 
-    .reseña {
-      background: var(--card);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 850px;
-      margin: auto;
-      margin-top: 1em;
-    }
-    .reseña h1 {
-      text-align: center;
-      color: var(--accent);
-    }
-    .imagen, .imagen-levitt {
-      display: block;
-      margin: 20px auto;
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .seccion {
-      margin-top: 18px;
-    }
-    .seccion strong {
-      color: var(--accent-2);
-    }
-    .destacado1 {
-      background-color: var(--accent-3);
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+.seccion {
+  margin-top: 18px;
+}
 
-h1 { color: var(--accent); }
-h2, h3 { color: var(--accent-2); }
+.seccion strong {
+  color: var(--accent-2);
+}
+
+.destacado1 {
+  background-color: var(--accent-3);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.destacado1 ul {
+  margin-left: 0;
+  padding-left: 20px;
+}
+
+h1 { 
+  color: var(--accent);
+  font-size: 1.8em;
+}
+
+h2, h3 { 
+  color: var(--accent-2);
+}
 
 p {
   margin: 10px 0;
@@ -66,8 +84,14 @@ p {
   line-height: 1.5;
 }
 
-ul { margin: 8px 0 12px 20px; color: var(--muted); }
-li { margin: 6px 0; }
+ul { 
+  margin: 8px 0 12px 20px;
+  color: var(--muted);
+}
+
+li { 
+  margin: 6px 0;
+}
 
 .example {
   background: var(--gray-light);
@@ -77,31 +101,33 @@ li { margin: 6px 0; }
   border-left: 4px solid var(--accent-3);
 }
 
-.formula {
+.formula,
+.formula-box {
   background: #ffffff;
   border-left: 5px solid var(--accent);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-margin: 25px auto 40px auto;
+  margin: 25px auto 40px auto;
   padding: 1em;
   text-align: center;
   font-size: 1.2em;
-border-radius: 12px;
- width: fit-content;
-}
-
-.formula-box {
-  background-color: #ffffff;
-  padding: 15px 25px;
-  margin: 25px auto 40px auto;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: fit-content;
-  text-align: center;
-  font-size: 1.2em;
-  max-width: 90vw;
+  max-width: 90%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-.note, .caja-nota {
+.formula .MathJax,
+.formula-box .MathJax,
+.formula .MathJax_Display,
+.formula-box .MathJax_Display {
+  max-width: 100% !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.note, 
+.caja-nota {
   background-color: #d9ead3;
   border-left: 5px solid var(--accent-2);
   padding: 15px;
@@ -111,7 +137,10 @@ border-radius: 12px;
   color: #4b6b3a;
 }
 
-.icono { font-weight: bold; font-size: 1.1em; }
+.icono { 
+  font-weight: bold;
+  font-size: 1.1em;
+}
 
 table {
   width: 100%;
@@ -134,7 +163,10 @@ td {
   text-align: center;
 }
 
-.destacado { font-weight: bold; color: var(--accent-3); }
+.destacado { 
+  font-weight: bold;
+  color: var(--accent-3);
+}
 
 .card {
   background: var(--card);
@@ -165,129 +197,6 @@ hr {
   padding: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.03);
   color: #222;
-}
-:root {
-  --accent: #19470b;
-  --accent-2: #3a6f1a;
-  --accent-3: #dae6cf;
-  --gray-light: #f5f5f5;
-  --bg: #fafafa;
-  --muted: #666;
-  --card: #ffffff;
-  --radius: 12px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--bg);
-  color: #222;
-  padding: 30px;
-  margin: 30px;
-  line-height: 1.6;
-}
-
-.reseña {
-  background: var(--card);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 850px;
-  margin: auto;
-  margin-top: 1em;
-}
-
-.reseña h1 {
-  text-align: center;
-  color: var(--accent);
-}
-
-.seccion {
-  margin-top: 18px;
-}
-
-.seccion strong {
-  color: var(--accent-2);
-}
-
-.destacado1 {
-  background-color: var(--accent-3);
-  padding: 15px;
-  border-radius: 8px;
-  margin-top: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-h1 { 
-  color: var(--accent);
-  font-size: 1.8em;
-}
-
-h2, h3 { 
-  color: var(--accent-2);
-}
-
-p {
-  margin: 10px 0;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-ul { 
-  margin: 8px 0 12px 20px;
-  color: var(--muted);
-}
-
-li { 
-  margin: 6px 0;
-}
-
-.formula,
-.formula-box {
-  background: #ffffff;
-  border-left: 5px solid var(--accent);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin: 25px auto 40px auto;
-  padding: 1em;
-  text-align: center;
-  font-size: 1.2em;
-  border-radius: 12px;
-  width: fit-content;
-  max-width: 90%;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.formula .MathJax,
-.formula-box .MathJax,
-.formula .MathJax_Display,
-.formula-box .MathJax_Display {
-  max-width: 100% !important;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.note, .caja-nota {
-  background-color: #d9ead3;
-  border-left: 5px solid var(--accent-2);
-  padding: 15px;
-  margin-top: 1em;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  color: #4b6b3a;
-}
-
-.icono { 
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-.destacado1 ul {
-  margin-left: 0;
-  padding-left: 20px;
 }
 
 /* Calculadora */
@@ -348,6 +257,7 @@ canvas {
   border-radius: 8px;
 }
 
+/* Responsive */
 @media (max-width: 640px) {
   body {
     padding: 10px;
@@ -365,6 +275,10 @@ canvas {
   
   h2 {
     font-size: 1.2em;
+  }
+  
+  .summary { 
+    grid-template-columns: 1fr;
   }
   
   .formula,
@@ -387,14 +301,3 @@ canvas {
     height: 120px;
   }
 }
-
-@media (max-width: 640px) {
-  .summary { grid-template-columns: 1fr; }
-}
-
-
-
-
-
-
-
