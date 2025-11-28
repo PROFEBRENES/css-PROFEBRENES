@@ -113,7 +113,7 @@ li {
   border-radius: 12px;
   width: auto;
   max-width: 90%;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 
@@ -301,6 +301,7 @@ canvas {
     height: 120px;
   }
 }
+
 
 
 
