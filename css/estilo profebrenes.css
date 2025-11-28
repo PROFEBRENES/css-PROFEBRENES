@@ -111,7 +111,7 @@ li {
   text-align: center;
   font-size: 1.2em;
   border-radius: 12px;
-  width: fit-content;
+  width: auto;
   max-width: 90%;
   overflow-x: auto;
   overflow-y: hidden;
@@ -301,5 +301,6 @@ canvas {
     height: 120px;
   }
 }
+
 
 
