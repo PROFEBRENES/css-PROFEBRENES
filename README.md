@@ -2,17 +2,9 @@ Información aux para utilizar el mismo estilo en la página PROFEBRENES de goog
 
 Cuando pegues código de estructura en Google site no olvides pegar estas lineas de código (sirve para usar los estilos y para cargar el renderizado de fórmulas matemáticas):
 Clica en la pestaña superior que pone "Code" para poder copiar las tres siguientes lineas. Si no lo haces no podrás copiar bien el código.
-Estas tres lineas siguientes hay que introducirlas dentro de head.
+Estas linea siguientes hay que introducirla dentro de head. (Tiene vinculado que se rendericen fórmulas y el estilo del profebrenes)
 
-<link rel="stylesheet" href="https://profebrenes.github.io/css-PROFEBRENES/css/estilo%20profebrenes.css">
+<script src="https://profebrenes.github.io/css-PROFEBRENES/mathjax-config.js"></script> 
 
-<script>
-    window.MathJax = {
-        tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']],
-            displayMath: [['$$', '$$'], ['\\[', '\\]']]
-        }
-    };
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
