@@ -5,5 +5,14 @@ Clica en la pestaña superior que pone "Code" para poder copiar las tres siguien
 Estas tres lineas siguientes hay que introducirlas dentro de head.
 
 <link rel="stylesheet" href="https://profebrenes.github.io/css-PROFEBRENES/css/estilo%20profebrenes.css">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script>
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+    };
+</script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
